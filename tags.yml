@@ -10,5 +10,5 @@
       name: testing
       append_tags: True
       tags: 
-        'test1': 'test1'
-        'test2': 'test2'
+        '"{{key}}"': '"{{value}}"'
+        
