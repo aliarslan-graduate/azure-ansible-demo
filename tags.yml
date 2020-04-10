@@ -1,0 +1,14 @@
+- name: VM tags
+  hosts: localhost
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  connection: local
+  tasks:  
+  - name: Append tags to testing
+    azure_rm_virtualmachine:
+      resource_group: testing
+      name: testing
+      append_tags: True
+      tags: 
+        'derp': 'snort'
+        'derp1': 'snort1'
