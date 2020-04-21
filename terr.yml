@@ -4,7 +4,7 @@
    become_user: root
    tasks:
    - name: terraform init
-     command: cd home/vagrant/terraform 
+     command: cd terraform 
    tasks:
    - name: terraform init
      command: terraform init
