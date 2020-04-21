@@ -1,0 +1,17 @@
+---
+ - hosts: localhost
+   become: true
+   become_user: root
+   
+   tasks:
+   - name: terraform init
+     command: cd home/vagrant/terraform 
+   tasks:
+   - name: terraform init
+     command: terraform init
+   tasks:
+   - name: terraform plan
+     command: terraform plan
+   tasks:
+   - name: terraform apply
+     command: terraform apply -auto-approve
