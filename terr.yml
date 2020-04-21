@@ -9,6 +9,9 @@
    - name: terraform init
      command: terraform init
    tasks:
+   - name: terraform destroy
+     command: terraform destroy
+   tasks:
    - name: terraform plan
      command: terraform plan
    tasks:
